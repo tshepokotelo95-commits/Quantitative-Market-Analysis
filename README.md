@@ -1,9 +1,11 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/tshepokotelo95-commits/Quantitative-Market-Analysis)
+![CI Pipeline](https://github.com/tshepokotelo95-commits/Quantitative-Market-Analysis/actions/workflows/ci.yml/badge.svg)
 
 # Quantitative-Market-Analysis
-Market Data Analysis &amp; Strategy: Applied Python (Pandas) and advanced time-series techniques to analyze market data and model ZAR/USD volatility. Developed a predictive model with 85% out-of-sample accuracy, informing macro investment strategy.
 
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+Market Data Analysis & Strategy: Applied Python (Pandas) and advanced time-series techniques to analyze market data and model ZAR/USD volatility. Developed a predictive model with 85% out-of-sample accuracy, informing macro investment strategy.
 
 ---
 
@@ -20,3 +22,15 @@ The pipeline ingests raw OHLCV (Open, High, Low, Close, Volume) data arrays. Rat
 Signals are systematically generated through cross-sectional parameter sweeps. The backtesting loop enforces strict institutional constraints:
 * **Transaction Cost Adjustments:** Integrates variable slippage models and fixed basis-point execution drag to reflect true market friction.
 * **Vectorized Backtesting Optimization:** Leverages vectorized arrays via NumPy and Pandas to simulate multi-year holding period returns over varying macroeconomic cycles, tracking Sharpe, Sortino, and Max Drawdown metrics.
+
+---
+
+## 🚀 Quickstart
+
+```bash
+# Clone repository
+git clone [https://github.com/tshepokotelo95-commits/Quantitative-Market-Analysis.git](https://github.com/tshepokotelo95-commits/Quantitative-Market-Analysis.git)
+cd Quantitative-Market-Analysis
+
+# Run market analysis and backtesting pipeline
+python src/backtest_engine.py
